@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RatCoin Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="balance-section">
+            <img src="https://i.ibb.co/kgxdGqs/RAAAAAAAAAAAATCuette-of-a-rat-on-xl-1024-v1-0-photoaidcom-cropped.png" alt="RatCoin Logo" class="ratcoin-logo">
+            <h1 id="balance">Balance: 0 RatCoin</h1>
+        </div>
+    </header>
+    <main id="content">
+        <div id="home" class="page active">
+            <h2>Welcome to RatCoin App</h2>
+            <p>Your one-stop solution for managing your RatCoin. Explore tasks, participate in airdrops, and keep track of your balance.</p>
+        </div>
+        <div id="tasks" class="page hidden">
+            <h2>Tasks</h2>
+            <button id="subscribe">Subscribe to Telegram Channel</button>
+            <p id="task-message"></p>
+        </div>
+        <div id="airdrop" class="page hidden">
+            <h2>Airdrop</h2>
+            <button id="add-wallet">Add Wallet</button>
+            <div id="wallet-options" class="hidden">
+                <button data-wallet="telegram">Telegram Wallet</button>
+                <button data-wallet="tonkeeper">Tonkeeper</button>
+                <!-- Additional wallet options -->
+            </div>
+            <input type="text" id="wallet-address" placeholder="Enter wallet address">
+            <button id="submit-wallet">Submit Wallet</button>
+            <p id="wallet-message"></p>
+        </div>
+    </main>
+    <footer>
+        <button class="nav-button" data-page="home">Главная</button>
+        <button class="nav-button" data-page="tasks">Задания</button>
+        <button class="nav-button" data-page="airdrop">Airdrop</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
